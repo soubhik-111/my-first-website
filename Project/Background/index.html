@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="logo.jpg">
+    <title>Gradient Background</title>
+    
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital@1&family=Roboto+Mono:wght@500&display=swap');
+        /* font-family: 'Crimson Text', serif; */
+        /* font-family: 'Roboto Mono', monospace; */
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        body{
+            background: linear-gradient(to right,rgb(225, 255, 0),rgb(104, 232, 255));
+        }
+        .color-box{
+            display: flex;
+            margin-top: 10vh;
+            text-align: center;
+            justify-content: center;
+        }
+        h1{
+            text-align: center;
+            margin-top: 10vh;
+            font-family: 'Crimson Text', serif;
+        }
+        input{
+            height: 12vh;
+            width: 8vw;
+            margin: 0vh 2vw;
+        }
+        h2{
+            text-align: center;
+            margin-top: 10vh;
+            font-family: 'Crimson Text', serif;
+        }
+        #txt{
+            margin: 0vh 3vw;
+        }
+        #area{
+            text-transform: uppercase;
+            font-family: 'Roboto Mono', monospace;
+            
+        }
+        @media only screen and (max-width: 685px) {
+            #area{
+                font-size: 20px;
+            }
+            input{
+                height: 60px;
+                width: 60px;
+                margin: 0vh 2vw;
+            }
+        }
+    </style>
+</head>
+<body id="body" onload="random()">
+    <h1>Background Generator</h1>
+
+    <div class="color-box">
+        <div>
+            <input type="color" id="color1" name="color1" value="#00ff00">
+        </div>
+        <div>
+            <input type="color" id="color2" name="color2" value="#ff0000">
+        </div>
+    </div>
+    <div>
+        <h2>
+            Current CSS Background
+        </h2>
+        <div id="txt">
+            <h2><span id="area"></span></h2>
+        </div>
+    </div>
+   <script>
+
+    const body = document.getElementById("body");
+    const area =  document.getElementById("area");
+    const color1 = document.getElementById("color1");
+    const color2 = document.getElementById("color2");
+    function gradient() {
+        body.style.background=`linear-gradient(to right, ${color1.value} , ${color2.value} )`;
+        area.innerHTML = body.style.background;
+    }
+    function randColor() {
+        var randomColor = Math.floor(Math.random()*16777215).toString(16);
+        return randomColor;
+    }
+    function random(){
+        color1.value = "#"+randColor();
+        color2.value = "#"+randColor();
+        body.style.background=`linear-gradient(to right, ${color1.value} , ${color2.value} )`;
+        area.innerHTML = body.style.background;
+    }
+    color1.addEventListener("input",gradient);
+    color2.addEventListener("input",gradient);
+
+
+   </script>
+    
+</body>
+</html> 

@@ -1,0 +1,148 @@
+.body{
+  background-image: url(img/bg.jpg)
+}
+#pbody{
+  background: linear-gradient(red,blue);
+}
+
+*{
+  margin: 0px;
+  padding:0px;
+}
+#pmain{
+  margin:15vh 0vh;
+}
+ul{
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+ul a{
+  text-decoration: none;
+  color: #000000; 
+  margin: 50px;
+  font-size: 35px;
+  font-size: 40px
+}
+li{
+  list-style: none;
+  margin-top: 12px;
+}
+.img{
+  height: 30vw;
+  margin: 20px 0px;;
+}
+.main{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  margin: 50px;
+}
+nav{
+  /* background-color: greenyellow; */
+  background: linear-gradient(to right, #f12711, #f5af19);
+
+  height: 60px;
+}
+nav a:hover {
+   opacity: 0.5;
+   
+ }
+.main img{
+  filter: grayscale(0.8);
+}
+.main img:hover{
+  filter: grayscale(0);
+  transform: scale(1.2);
+}
+#txt{
+  color:#FF4040;
+  text-align: center;
+  justify-content: center;
+  margin-top: 20px
+}
+.copy{
+  text-align: center;
+  justify-content: center;
+  background :greenyellow;
+  color: black;
+  padding:10px;
+  font-size: 40px;
+}
+.ft{
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+#dt{
+  margin:0px 5px;
+}
+.pre{
+  display: flex;
+  justify-content: center;
+}
+#slider{
+   overflow-x:hidden;
+}
+#next , #auto {
+  margin-top: 50%;
+  filter: invert(1);
+}
+
+@media only screen and (max-width:600px){
+    .copy{
+      font-size:18px;
+    }
+    #txt{
+      font-size: 22px;
+    }
+    ul a{
+      font-size:18px;
+    }
+
+    nav {
+      height: 40px;
+  }
+  li{
+    margin: 7px 0;
+  }
+  .img {
+    margin: 10px 0px;
+}
+}
+
+@media only screen and (max-width:500px){
+  .main{
+    grid-template-columns: repeat(2,1fr);
+    place-items: center;
+  }
+  #next, #auto {
+    margin-top: 50%;
+    width: 70px;
+    filter: invert(1);
+    height: 50px;
+}
+}
+
+@media only screen and (max-width:300px){
+  nav{
+    height: 28px;
+  }
+  .copy{
+    font-size:10px;
+  }
+  #txt{
+    font-size: 12px;
+  }
+  ul a{
+    font-size:10px;
+  }
+  .main {
+    margin: 15px;
+  }
+}
+
+
+
+
+
+

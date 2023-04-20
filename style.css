@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@500&family=Euphoria+Script&family=Lato:ital,wght@1,300&family=Open+Sans:ital,wght@1,300&family=Roboto+Mono:wght@300&family=Source+Sans+Pro:ital@1&display=swap');
+
+/* 
+font-family: 'Euphoria Script', cursive;
+font-family: 'Source Sans Pro', sans-serif;
+font-family: 'Lato', sans-serif;
+font-family: 'Roboto Mono', monospace;|
+font-family: 'Open Sans', sans-serif;
+font-family: 'Source Sans Pro', sans-serif;
+ */
+
+*{
+  margin: 0px;
+  padding: 0px;
+}
+
+h2{
+  text-align: center;
+  margin-top: 14px;
+}
+*{
+  margin: 0px;
+  padding: 0px;
+}
+.logo{
+  height: 30px;
+  border-radius: 50%;
+  margin: 5px;
+}
+.homenav{
+  display: flex;
+  background-color: black;
+}
+.homenav ul{
+  margin-top: 0px;
+  display: flex;
+  margin-left: 32%;
+}
+.homenav li{
+  list-style: none;
+  margin: 10px 17px;
+  color:white;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+.homenav li a{
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+.welcomediv{
+  margin :40px 60px;
+  padding: 10px 30px;
+  border: 3px solid black;
+}
+#heading{
+  font-size: 24px;
+}
+
+.welcome{
+  margin: 10px 25px;
+  padding: 0px 10px;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Lato', sans-serif;
+}
+.para{
+  margin: 25px 0px;
+}
+
+.para p{
+  margin: 0 33px;
+  font-size: 28px;
+  font-family: 'Euphoria Script', cursive;
+}
+
+.welcomebtn{
+  margin-left: 35px;
+  font-size: 15px;
+  background: #4336BB;
+  color:#F9FF00;
+  padding: 4px;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+#txt{
+  text-align: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+.box{
+  font-family: 'Roboto Mono', monospace;
+}
+.html{
+  margin-left: 35px
+}
+.html button{
+  margin-top: 5px;
+}
+footer{
+  background-color: black;
+  color :white;
+  padding:7px;
+  text-align: center;
+  justify-content: center;
+}
+footer p{
+  margin:5px 0px;
+  justify-content: baseline
+}
+
+/* RESPONSIVE  */
+
+@media only screen and (max-width :600px){
+  .homenav ul {
+    margin-left: auto;
+}
+}
+
+
+@media only screen and (max-width :400px){
+  #heading {
+    font-size: 18px;
+  }
+  .homenav li {
+    list-style: none;
+    margin: 10px;
+    color: white;
+    font-size: 12px;
+}
+}

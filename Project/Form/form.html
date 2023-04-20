@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Login Page</title>
+  <style>
+  *{
+    margin: 0px;
+    padding: 0px;
+    }
+    body{
+      color: black;
+    }
+    #form{
+      margin:10px 25px;
+      padding: 10px 0px;
+      border-radius: 20px;
+      border: 2px solid #FF0000;
+      background-color: black;
+    }
+    #login{
+      margin:5px 30%;
+      display: block;
+      background: linear-gradient(to left,#3100FF,#8400FF);
+      color: white;
+    }
+    input{
+      display: block;
+      text-align: center;
+      margin: 10px auto;
+      padding:6px 50px;
+      
+    }
+    #lpage{
+      margin: 10px 0px;
+      text-align: center;
+      color: #FBFF00;
+      font-weight: bold;
+    }
+    #dhaa{
+      margin: 30px 2px;
+      color: red;
+      font-weight: 300;
+    }
+    #sign{
+      color:blue;
+      margin: 30px 2px;
+      font-weight: 300;
+    }
+    header{
+      background-color: #8400FF;
+      padding: 10px;
+      text-align: center;
+      color: #FFEF00;
+      font-weight: bold;
+    }
+    footer{
+      background: linear-gradient(to left,#4551FF,#FF4545);
+      text-align: center;
+      color:#FFFFFF;
+      padding: 5px 0px;
+      font-weight: 500;
+    }
+    marquee{
+      margin:30px 0px;
+      background-color: #FBFF00
+    }
+  </style>
+</head>
+<body>
+  
+  <header>
+    WELCOME TO LOGIN PAGE
+  </header>
+  
+  <main>
+    <div id="form">
+      <p id="lpage">
+        Login Page
+      </p>
+      <form method="get">
+        
+        <input type="text" placeholder="First Name" autocomplete="on" onkeyup="this.value = this.value.toUpperCase();" required>
+        
+        <input type="text" autocomplete="on" placeholder="Last Name" onkeyup="this.value = this.value.toUpperCase();" required>
+        
+        <input type="email" autocomplete="on" placeholder="Enter Your Email" onkeyup="this.value = this.value.toLowerCase();" required>
+        
+        <input type="password"  placeholder="Enter Your Password" required>
+        
+        <input type="tel"  placeholder="Enter your Phone Number">
+        
+        <input type="submit" value="Login" id="login">
+        
+      </form>
+
+    </div>
+    <div id="dhaa">
+      Don't have an account?
+    </div>
+    <div id="sign">
+      Sign up
+    </div>
+  </main>
+  
+  <footer>
+    <code><p>&copy; Copyright CodeWithCrazy </p>
+    <script>document.write(new Date().getFullYear());</script>
+  |  All Rights Reserved
+  </code>
+  
+  </footer>
+  
+</body>
+
+</html>

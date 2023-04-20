@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Gallery</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body id="pbody">
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#">Preview</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main id="pmain">
+    
+    <div class="pre">
+
+        <img  src="img/slide.jpeg" height="100px" onclick="auto()" id="auto">
+     
+      <img src="img/1.jpg" alt="img/1.jpg" id="slider">
+      
+        <img  src="img/next.png" height="100px" onclick="next()" id="next" >
+     
+    </div>
+    
+  </main>
+  <footer>
+    <div class="copy">
+      &copy; copyright CodeWithCrazy
+      <div class="ft">
+        <span id="date"></span>
+        | All rights reserved
+      </div>
+    </div>
+  </footer>
+  <script>
+    var images = [
+          "img/1.jpg",
+          "img/2.jpg",
+          "img/3.jpg",
+          "img/4.jpg",
+          "img/5.jpg",
+          "img/6.jpg",
+          "img/7.jpg",
+          "img/8.jpg",
+          "img/9.jpg",
+          "img/10.jpg",
+          "img/11.jpg",
+          "img/12.jpg",
+          "img/13.jpg",
+          "img/14.jpg",
+          "img/15.jpg",
+          "img/16.jpg",
+          "img/17.jpg",
+          "img/18.jpg",
+          "img/19.jpg",
+          "img/20.jpg",
+          "img/21.jpg",
+          "img/22.jpg"
+          ];
+      var num = 0;
+      
+      function next() {
+        var slider = document.getElementById("slider");
+        num++;
+        if (num >= images.length) {
+          num = 0;
+        }
+        slider.src = images[num];
+        }
+        
+        function auto() {
+          setInterval(next, 1500);
+        }
+        
+        var date = new Date();
+    document.getElementById("date").innerHTML = date.getFullYear();
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.0"/>
+
+  <title>Rashmika Fan</title>
+  
+  <!-- HTML -->
+  
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="style.css">
+</head>
+  
+<body class="body"> 
+
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="preview.html">Preview</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  <div id="slide">
+  <h2 id="txt"></h2>
+  
+  <main class="main">
+    
+    <a href="img/1.jpg" class="aimg"><img  src="img/1.jpg"   class="img" /></a>
+    <a href="img/2.jpg" class="aimg"><img  src="img/2.jpg"   class="img" /></a>
+    <a href="img/3.jpg" class="aimg"><img  src="img/3.jpg"   class="img" /></a>
+    <a href="img/4.jpg" class="aimg"><img  src="img/4.jpg"   class="img" /></a>
+    <a href="img/5.jpg" class="aimg"><img  src="img/5.jpg"   class="img" /></a>
+    <a href="img/6.jpg" class="aimg"><img  src="img/6.jpg"   class="img" /></a>
+    <a href="img/7.jpg" class="aimg"><img  src="img/7.jpg"   class="img" /></a>
+    <a href="img/8.jpg" class="aimg"><img  src="img/8.jpg"   class="img" /></a>
+    <a href="img/9.jpg" class="aimg"><img  src="img/9.jpg"   class="img" /></a>
+    <a href="img/10.jpg"class="aimg"><img src="img/10.jpg" class="img"/></a>
+    <a href="img/11.jpg"class="aimg"><img src="img/11.jpg" class="img"/></a>
+    <a href="img/12.jpg"class="aimg"><img src="img/12.jpg" class="img"/></a>
+    <a href="img/13.jpg"class="aimg"><img src="img/13.jpg" class="img"/></a>
+    <a href="img/14.jpg"class="aimg"><img src="img/14.jpg" class="img"/></a>
+    <a href="img/15.jpg"class="aimg"><img src="img/15.jpg" class="img"/></a>
+    <a href="img/16.jpg"class="aimg"><img src="img/16.jpg" class="img"/></a>
+    <a href="img/17.jpg"class="aimg"><img src="img/17.jpg" class="img"/></a>
+    <a href="img/18.jpg"class="aimg"><img src="img/18.jpg" class="img"/></a>
+    <a href="img/19.jpg"class="aimg"><img src="img/19.jpg" class="img"/></a>
+    <a href="img/20.jpg"class="aimg"><img src="img/20.jpg" class="img"/></a>
+    <a href="img/21.jpg"class="aimg"><img src="img/21.jpg" class="img"/></a>
+    <a href="img/22.jpg"class="aimg"><img src="img/22.jpg" class="img"/></a>
+    <a href="img/23.jpg"class="aimg"><img src="img/23.jpg" class="img" /></a>
+    <a href="img/24.jpg"class="aimg"><img src="img/24.jpg" class="img" /></a>
+    </main>
+    </div>
+  <footer>
+    <div class="copy">
+      &copy; copyright CodeWithCrazy
+      <div class="ft">
+        <div id="dt"></div>
+        | All rights reserved
+      </div>
+    </div>
+  </footer>
+  <script>
+  
+  
+    alert('Hold any image or take your cursor to clear the image!');
+    
+    var str = document.querySelector("#txt");
+    var txt = "Welcome To Gallery Of Rashmika Mandana! ";
+    var txtlen = txt.length;
+    var pos = -1;
+    var t = setInterval(move, 200);
+    
+    function move() {
+      pos++;
+      str.innerHTML += txt.charAt(pos);
+    }
+    
+    var d = new Date();
+    document.getElementById("dt").innerHTML = d.getFullYear();
+  </script>
+</body>
+</html>

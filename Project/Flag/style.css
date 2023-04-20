@@ -1,0 +1,184 @@
+html{
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+body {
+    font-size: 15pt;
+} 
+header{
+  margin : 0px 50px;
+  font-family: 'Luxurious Roman', cursive;
+  animation: colorChange 3s ease-in infinite,enter 4s ease-in;
+}
+@keyframes colorChange{
+    0%{color:#FF9933;}
+    33%{color:#000080;}
+    66%{color:#138808;}
+    100%{color:#FF9933;}
+}
+@keyframes enter{
+    from{opacity:0;}
+    to{opacity:1;}
+}
+.saffron{
+  background-color: #FF9933;
+  height: 90px;
+  width: 300px;
+  animation: stretch 2s ease-in;
+}
+.white{
+  background-color: white;
+  height: 90px;
+  width: 300px;
+}
+.green{ 
+  background-color: green;
+  height: 90px;
+  width: 300px;
+  animation: stretch 2s ease-in;
+}
+@keyframes stretch {
+  from{
+    width: 0px;
+    opacity: 0;
+  }
+  to{
+    width: 300px;
+    opacity: 1;
+  }
+}
+.chakra{
+  margin: 0px 100px;
+  height: 90px;
+  width: 90px;
+  position: absolute;
+  border-radius: 50%;
+  border: 5px solid darkblue;
+  animation: appear 2s ease-in;
+}
+@keyframes appear{
+  from { opacity: 0;}
+  to {opacity: 1;}
+}
+.flex{
+  display: flex;
+}
+#one{
+  width: 90px;
+  top: 165px;
+  left: 108px;
+  position: absolute;
+ transform: rotate(0deg);
+ border: 2px solid darkblue;
+ animation: spoke 2s ease-in;
+}
+#two{
+width: 90px;
+top: 165px;
+left: 108px;
+position: absolute;
+transform: rotate(15deg);
+border: 2px solid darkblue;  
+animation: spoke 2s ease-in;
+}
+#three {
+  width: 90px;
+  top: 165px;
+  left: 108px;
+  position: absolute;
+  transform: rotate(30deg);
+  border: 2px solid darkblue;
+  animation: spoke 2s ease-in;
+}
+#four {
+  width: 90px;
+  top: 165px;
+  left: 108px;
+  position: absolute;
+  transform: rotate(45deg);
+  border: 2px solid darkblue;
+  animation: spoke 2s ease-in;
+}
+#five {
+  width: 90px;
+  top: 165px;
+  left: 108px;
+  position: absolute;
+  transform: rotate(60deg);
+  border: 2px solid darkblue;
+  animation: spoke 2s ease-in;
+}
+#six {
+  width: 90px;
+  top: 165px;
+  left: 108px;
+  position: absolute;
+  transform: rotate(75deg);
+  border: 2px solid darkblue;
+  animation: spoke 2s ease-in;
+}
+#seven {
+  width: 90px;
+  top: 165px;
+  left: 108px;
+  position: absolute;
+  transform: rotate(90deg);
+  border: 2px solid darkblue;
+  animation: spoke 2s ease-in;
+}
+#eight {
+  width: 90px;
+  top: 165px;
+  left: 108px;
+  position: absolute;
+  transform: rotate(105deg);
+  border: 2px solid darkblue;
+  animation: spoke 2s ease-in;
+}
+#nine {
+  width: 90px;
+  top: 165px;
+  left: 108px;
+  position: absolute;
+  transform: rotate(120deg);
+  border: 2px solid darkblue;
+  animation: spoke 2s ease-in;
+}
+#ten {
+  width: 90px;
+  top: 165px;
+  left: 108px;
+  position: absolute;
+  transform: rotate(135deg);
+  border: 2px solid darkblue;
+  animation: spoke 2s ease-in;
+}
+#eleven {
+  width: 90px;
+  top: 165px;
+  left: 108px;
+  position: absolute;
+  transform: rotate(150deg);
+  border: 2px solid darkblue;
+  animation: spoke 2s ease-in;
+}
+#twelve {
+  width: 90px;
+  top: 165px;
+  left: 108px;
+  position: absolute;
+  transform: rotate(165deg);
+  border: 2px solid darkblue;
+  animation: spoke 2s ease-in;
+}
+@keyframes spoke {
+   from { opacity: 0;}
+  to {opacity: 1;}
+}
+footer{
+ margin-top: 100px;
+  background: linear-gradient(to right,#FF9933,#FFFFFF, green);
+  text-align: center;
+}

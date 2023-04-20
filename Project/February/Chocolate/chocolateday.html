@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js">
+      </script>
+  <title>Happy Chocolate Day</title>
+  
+  <style>
+  @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,500&family=Source+Serif+4&display=swap');
+  *{
+    margin: 0px;
+    padding: 0px;
+  }
+    body{
+      background-image: url(Chocolate.jpeg);
+      background-size: cover;
+    }
+    img{
+      text-align: center;
+      width : 270px;
+      margin: 10px 0px;
+      border-radius: 20px;
+    } 
+    #div{
+      text-align: center;
+      background:#00FFFD;
+      box-shadow: 24px 24px -8px -8px #FF0088;
+      margin: 100px 20px;
+      padding: 12px;
+      border-radius: 30px;
+      box-shadow: 9px 8px #22275EAB;
+    }
+    #txt{
+      font-family: 'Source Serif 4', sans-serif;
+    }
+    p{
+      font-family: 'Roboto', sans-serif;
+    }
+  </style>
+  
+</head>
+<body>
+  
+ <div id="div">
+   <h3 id="txt"></h3>
+   <img src="Chocolate1.jpeg" alt="Chocolate1.jpeg">
+   <p>It is usually the day when people express their love to their crush without hesitation. Whether your proposal is accepted or turned down, do not forget to pamper the person with a box of chocolates. It is said that for couples, Chocolate Day is the sweetest day of the year.</p>
+ </div> 
+  <footer>
+    <audio loop id="audio">
+     <source id="audio-source"
+     src="chocolate.mp3"> </audio>
+  </footer>
+  
+  <script>
+    window.addEventListener("mouseover",play);
+    window.addEventListener("click",play);
+    function play(){ document.getElementById("audio").play();
+    }
+    var str = document.querySelector("#txt");
+    var txt = "Happy chocolate 🍫 day!";
+    var txtlen = txt.length;
+    var pos = -1;
+    var t = setInterval(move, 200);
+    
+    function move() {
+      pos++;
+      str.innerHTML += txt.charAt(pos);
+    }
+     swal({
+       title:"Happy Chocolate Day !",
+       text:"Have A Beautiful day !!",
+       icon:"success",
+       button:"Thanks 🍫",
+     });
+     
+  </script>
+</body>
+</html>

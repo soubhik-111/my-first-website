@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Quiz</title>
+  <style>
+    *{
+      margin: 0px;
+      padding: 0px;
+    }
+    p{
+      text-align: center;
+      margin-top: 1vh;
+      font-weight: bold
+
+    }
+    main{
+      background-color: red;
+      height:70vh;
+      width:90vw;
+      margin: auto;
+    }
+    #container1 {
+      padding: 2vh 0vw;
+      margin: 2vh 0vw;
+      color:#DDFF00;
+    }
+    #container2{
+     display:flex;
+    }
+    #content1,#content2{
+      height:55vh;
+      width:40vw;
+      background-color: black;
+      margin:auto;
+      text-align: center;
+    }
+    #no,#yes {
+      min-height: 17px;
+      margin:25vh 0vw 0vh 0vw;
+      height:4vh;
+      width:8vw;
+      font-weight: 400
+  
+    }
+    #afterans{
+      text-align: center;
+      justify-content: center;
+      font-size: 2rem;
+      margin-top: 23vh;
+      display: none;
+      color:black;
+    }
+    footer{
+      text-align: center;
+      margin-top: 5vh;
+    }
+    .btn{
+      background-color:red;
+      font-size: 4vh;
+      color: white;
+      padding:1vh;
+    }
+    .btn:hover{
+      background-color:black;
+      color: white;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <p>Programming Quiz Question</p>
+  </header>
+  <main>
+    <div id="container1">
+      <p>Java is Easy ?</p>    
+    </div>
+    <div id="container2">
+      <div id="content1">
+        <button onclick="yes()" id="yes">YES</button>
+      </div>
+      <div id="content2">
+        <button onclick="no()" id="no">NO</button>
+      </div>
+    </div>
+    <div id="afterans">
+      Please Subscribe link below.
+    </div>
+  </main>
+  <footer>
+    <a href="https://youtube.com/channel/UCyMrkqOVbXTzBpm2Qt-OhRg"><button class="btn" type="submit">Learn More</button></a>
+  </footer>
+  <script>
+  
+    function yes() {
+      var a1 = Math.random()*50;
+      var b1 = Math.floor(a1);
+      var a2 = Math.random()*30;
+      var b2 = Math.floor(a2);
+
+      const yes = document.getElementById("yes");
+      yes.style.margin= b1+"vh "+b2+"vw";
+      
+      var content1 = document.getElementById("content1");
+        content1.style.textAlign="initial";
+      
+      
+    }
+    
+    function no() {
+      var ele = document.getElementById("container2");
+      ele.style.display="none"
+      
+      var ele2 = document.getElementById("afterans").style.display="block"
+    }
+  </script>
+</body>
+</html>
